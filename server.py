@@ -214,7 +214,7 @@ def fetch_news_for_category(category_id, category_config):
             remaining = 25 - len(articles)
             domains = category_config.get("domains", "")
             sort_by = category_config.get("sort", "publishedAt")
-            raw = _call_newsapi(category_config["keywords"], domains, page_size=25, sort_by=sort_by)
+            raw = _call_newsapi(category_config["keywords"], domains, page_size=50, sort_by=sort_by)
             articles.extend(_parse_articles(raw, limit=remaining))
 
         if len(articles) < 25:
