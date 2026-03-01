@@ -1,4 +1,4 @@
-# The Daily Wire — Newspaper Website
+# The Synthesis — Newspaper Website
 
 A minimalistic, auto-updating newspaper website with category-based news browsing.
 
