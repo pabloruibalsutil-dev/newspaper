@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Wire | News</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body data-category="politics">
+
+    <header class="site-header">
+        <div class="header-top">
+            <span class="header-date" id="current-date"></span>
+        </div>
+        <h1 class="site-title">THE DAILY WIRE</h1>
+        <p class="site-tagline">Your source for what matters</p>
+    </header>
+
+    <nav class="category-nav" id="category-nav"></nav>
+
+    <main class="content" id="news-content">
+        <div class="loading" id="loading">
+            <div class="loading-spinner"></div>
+            <p>Loading latest news...</p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 The Daily Wire. All rights reserved.</p>
+            <p class="footer-update" id="last-update"></p>
+        </div>
+    </footer>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

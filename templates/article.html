@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} | The Daily Wire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        :root {
+            --bg: {{ theme.bg }};
+            --nav-bg: {{ theme.navBg }};
+            --hero-bg: {{ theme.heroBg }};
+            --hero-text: {{ theme.heroText }};
+            --card-bg: {{ theme.cardBg }};
+            --card-text: {{ theme.cardText }};
+            --placeholder-bg: {{ theme.placeholderBg }};
+            --divider-line: {{ theme.dividerLine }};
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="/" class="header-home-link">
+            <h1 class="site-title">THE DAILY WIRE</h1>
+        </a>
+        <p class="site-tagline">Your source for what matters</p>
+    </header>
+
+    <main class="article-page">
+        <div class="article-back">
+            <a href="/" class="back-link">&larr; Back to headlines</a>
+        </div>
+
+        {% if image %}
+        <div class="article-hero-image">
+            <img src="{{ image }}" alt="" loading="lazy">
+        </div>
+        {% endif %}
+
+        <article class="article-content fade-in">
+            <div class="article-header">
+                {% if source %}
+                <span class="article-source">{{ source }}</span>
+                {% endif %}
+
+                <h1 class="article-title">{{ title }}</h1>
+
+                <div class="article-meta-row">
+                    {% if author %}
+                    <span class="article-author">By {{ author }}</span>
+                    {% endif %}
+                    {% if published %}
+                    <span class="article-date">{{ published[:10] }}</span>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="article-body">
+                {% for p in paragraphs %}
+                <p>{{ p }}</p>
+                {% endfor %}
+            </div>
+
+            <div class="article-footer-link">
+                <a href="{{ original_url }}" target="_blank" rel="noopener">Read on original source &rarr;</a>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 The Daily Wire. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
