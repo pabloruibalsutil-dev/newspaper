@@ -575,9 +575,24 @@ img {
         grid-template-columns: 1fr;
     }
 
+    .category-nav {
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        scroll-snap-type: x mandatory;
+    }
+
+    .category-nav::-webkit-scrollbar {
+        display: none;
+    }
+
     .nav-btn {
         padding: 0.8rem 1.2rem;
         font-size: 0.7rem;
+        flex-shrink: 0;
+        scroll-snap-align: start;
     }
 
     .content {
