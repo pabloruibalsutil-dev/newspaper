@@ -149,7 +149,7 @@
             }
 
             const hero = data.articles[0];
-            const rest = data.articles.slice(1, 9);
+            const rest = data.articles.slice(1, 25);
 
             let html = buildHeroCard(hero);
             html += `<div class="section-divider"><span>Latest Stories</span></div>`;
