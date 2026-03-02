@@ -35,8 +35,8 @@ CATEGORIES = {
     },
     "technology": {
         "label": "Technology",
-        "keywords": "NVIDIA OR AMD OR Intel OR Apple OR Google OR Microsoft OR Samsung OR GPU OR processor OR AI OR semiconductor OR chip",
-        "domains": "theverge.com,arstechnica.com,techcrunch.com,wired.com,tomshardware.com,engadget.com,9to5google.com,macrumors.com,videocardz.com,techradar.com",
+        "keywords": "NVIDIA OR AMD OR Intel OR \"Apple Silicon\" OR \"Apple Mac\" OR \"Apple iPhone\" OR \"Apple chip\" OR Google OR Microsoft OR Samsung OR GPU OR processor OR AI OR semiconductor OR chip",
+        "domains": "theverge.com,arstechnica.com,techcrunch.com,wired.com,tomshardware.com,pcmag.com,9to5google.com,macrumors.com,videocardz.com,techradar.com",
         "theme": {
             "bg": "#f0f0f0",
             "navBg": "rgba(240,240,240,0.92)",
