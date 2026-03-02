@@ -35,8 +35,8 @@ CATEGORIES = {
     },
     "technology": {
         "label": "Technology",
-        "keywords": "NVIDIA OR AMD OR Intel OR \"Apple Silicon\" OR \"Apple Mac\" OR \"Apple iPhone\" OR \"Apple chip\" OR Google OR Microsoft OR Samsung OR GPU OR processor OR AI OR semiconductor OR chip",
-        "domains": "theverge.com,arstechnica.com,techcrunch.com,wired.com,tomshardware.com,pcmag.com,9to5google.com,macrumors.com,videocardz.com,techradar.com",
+        "keywords": "NVIDIA OR AMD OR Intel OR \"Apple Silicon\" OR \"Apple Mac\" OR \"Apple iPhone\" OR \"Apple chip\" OR Google OR Microsoft OR Samsung OR GPU OR processor OR \"artificial intelligence\" OR \"machine learning\" OR ChatGPT OR semiconductor OR chip",
+        "domains": "theverge.com,arstechnica.com,techcrunch.com,wired.com,tomshardware.com,pcmag.com,9to5google.com,macrumors.com,videocardz.com,zdnet.com",
         "theme": {
             "bg": "#f0f0f0",
             "navBg": "rgba(240,240,240,0.92)",
@@ -50,8 +50,8 @@ CATEGORIES = {
     },
     "sports": {
         "label": "Sports",
-        "keywords": "football OR \"Premier League\" OR \"Champions League\" OR \"La Liga\" OR \"Serie A\" OR Bundesliga OR FIFA OR UEFA OR soccer OR transfer OR \"Formula 1\" OR \"Formula One\" OR F1 OR MotoGP OR \"Grand Prix\"",
-        "domains": "bbc.co.uk,skysports.com,goal.com,espn.com,marca.com,90min.com,eurosport.com,theathletic.com,fourfourtwo.com,football-italia.net",
+        "keywords": "football OR \"Premier League\" OR \"Champions League\" OR \"La Liga\" OR \"Serie A\" OR Bundesliga OR \"Ligue 1\" OR \"Eredivisie\" OR \"Europa League\" OR \"Conference League\" OR UEFA OR FIFA OR transfer OR \"Formula 1\" OR \"Formula One\" OR F1 OR MotoGP OR \"Grand Prix\"",
+        "domains": "bbc.co.uk,skysports.com,goal.com,marca.com,as.com,90min.com,eurosport.com,theathletic.com,fourfourtwo.com,football-italia.net,lequipe.fr,corrieredellosport.it",
         "boost_keywords": ["Formula 1", "Formula One", "F1", "Grand Prix", "MotoGP"],
         "theme": {
             "bg": "#f0f7f0",
